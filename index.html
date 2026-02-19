@@ -3,90 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anugrah | Futuristic Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Anugrah | Premium Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="particles-js"></div>
+
+
 <header>
-    <div class="logo">ANUGRAH</div>
+    <div class="logo">A<span>N</span></div>
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#projects">Work</a>
+        <a href="https://wa.me/6281312194625" class="nav-btn">Hire Me</a>
     </nav>
 </header>
 
 <section id="home" class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>FUTURISTIC WEB<br><span>DEVELOPER</span></h1>
-            <p>I build modern, responsive & high-converting websites for businesses.</p>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-        <div class="hero-image">
-            <!-- GANTI dengan nama foto kamu -->
-            <img src="foto.jpg" alt="Anugrah Photo">
+    <div class="container">
+        <div class="hero-layout">
+            <div class="hero-text" data-aos="fade-right">
+                <div class="hero-badge">Available for 2026 Projects</div>
+                <h1>Digital <br><span>Architect</span></h1>
+                <p>Halo, saya <strong>Anugrah</strong>. Saya merancang dan membangun infrastruktur web yang elegan, cepat, dan berkelas dunia.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary">View Portfolio</a>
+                    <a href="https://wa.me/6281312194625" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="200">
+                <div class="image-border">
+                    <img src="foto.jpg" alt="Anugrah" class="profile-img">
+                </div>
+                <div class="floating-card">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Verified Developer</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-        Hi, I'm Anugrah — a Web Developer specializing in modern business websites.
-        I focus on performance, clean UI, and conversion-driven layouts to help
-        businesses build strong digital presence.
-    </p>
-</section>
+<section class="expertise">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My <span>Expertise</span></h2>
 
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Responsive Design</div>
+        <div class="expertise-grid">
+
+            <div class="expert-card" data-aos="fade-up">
+                <i class="fa-solid fa-gem"></i>
+                <h3>Luxury Brand Positioning</h3>
+                <p>Saya membangun website yang bukan hanya tampil bagus, tapi meningkatkan persepsi premium dan eksklusivitas brand Anda.</p>
+            </div>
+
+            <div class="expert-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>High Performance</h3>
+                <p>Struktur website dioptimalkan untuk kecepatan, SEO, dan pengalaman pengguna yang mulus di semua perangkat.</p>
+            </div>
+
+            <div class="expert-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Conversion Focused</h3>
+                <p>Setiap layout dirancang untuk mendorong tindakan: booking, konsultasi, atau pembelian.</p>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
+    <h2 class="section-title" data-aos="fade-up">
+        Selected <span>Works</span>
+    </h2>
 
-        <div class="project-card">
-            <img src="project1.jpg" alt="Coffee Project">
-            <h3>Coffee Shop Website</h3>
-            <p>Modern responsive website for local coffee brand.</p>
+    <div class="project-list">
+
+        <!-- PROJECT 01 -->
+        <div class="project-item" data-aos="fade-up">
+            <div class="p-img">
+                <img src="project1.jpg" alt="Coffee Project">
+                <div class="p-overlay">
+                    <a href="https://nugrahn0123.github.io/Sistem-Coffee/" target="_blank">
+                        View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="p-info">
+                <span>01. Web Development</span>
+                <h3>Coffee Shop Elite</h3>
+            </div>
         </div>
 
-        <div class="project-card">
-            <img src="project2.jpg" alt="Clinic Project">
-            <h3>Beauty Clinic Website</h3>
-            <p>Elegant landing page with booking & Google Maps integration.</p>
+        <!-- PROJECT 02 -->
+        <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-img">
+                <img src="project2.jpg" alt="Beauty Clinic Project">
+                <div class="p-overlay">
+                    <a href="https://nugrahn0123.github.io/Klinik-Preview/" target="_blank">
+                        View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="p-info">
+                <span>02. Landing Page</span>
+                <h3>Beauty Clinic Landing</h3>
+            </div>
         </div>
 
-        <div class="project-card">
-            <img src="project3.jpg" alt="Business Project">
-            <h3>Business Portfolio</h3>
-            <p>Professional company profile with SEO optimization.</p>
+        <!-- PROJECT 03 -->
+        <div class="project-item" data-aos="fade-up">
+            <div class="p-img">
+                <img src="project3.jpg" alt="Corporate Website">
+                <div class="p-overlay">
+                    <a href="https://nugrahn0123.github.io/Preview-Resto/" target="_blank">
+                        View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="p-info">
+                <span>03. Company Profile</span>
+                <h3>Restaurant Website</h3>
+            </div>
+        </div>
+
+        <!-- PROJECT 04 -->
+        <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-img">
+                <img src="project4.jpg" alt="Luxury Branding Website">
+                <div class="p-overlay">
+                    <a href="https://nugrahn0123.github.io/Preview-Konsultan/" target="_blank">
+                        View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="p-info">
+                <span>04. Premium UI Design</span>
+                <h3>Consulting Website</h3>
+            </div>
         </div>
 
     </div>
+    
+    
 </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: anugrahn935@gmail.com</p>
-    <p>Fiverr: fiverr.com/nugrah_n24</p>
+<div class="section-divider"></div>
+<div class="project-stats">
+    <div>
+        <h3>10+</h3>
+        <p>Projects Built</p>
+    </div>
+    <div>
+        <h3>100%</h3>
+        <p>Responsive</p>
+    </div>
+    <div>
+        <h3>Fast</h3>
+        <p>Optimized Performance</p>
+    </div>
+</div>
+<div class="project-footer">
+    <p>
+        Each project is crafted with attention to detail, performance optimization,
+        and strategic design thinking to ensure long-term business impact.
+    </p>
+</div>
+    <div class="section-divider"></div>
 </section>
 
-<footer>
-    <p>© 2026 Anugrah | Futuristic Web Developer</p>
-</footer>
+<section class="contact-section" data-aos="zoom-in">
+    <div class="contact-content">
+        <h2>Ready to build something <span>Extraordinary?</span></h2>
+        <p>Mari diskusi tentang proyek Anda dan buat perubahan nyata.</p>
+        <div class="contact-btns">
+            <a href="mailto:anugrahn935@gmail.com" class="c-btn"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://wa.me/6281312194625" class="c-btn wa-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Inisialisasi Animasi Scroll
+    AOS.init({ duration: 1000, once: true });
+
+    // Inisialisasi Efek Partikel
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#FFD700" },
+            shape: { type: "circle" },
+            opacity: { value: 0.2, random: true },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 150, color: "#FFD700", opacity: 0.1, width: 1 },
+            move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true }
+        },
+        retina_detect: true
+    });
+</script>
 
 </body>
 </html>

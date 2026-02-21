@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anugrah | Premium Developer</title>
+    <title>Anugrah | Developer Premium</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,15 +13,15 @@
 
 <div id="particles-js"></div>
 
-
 <header>
-<div class="logo">
-    <img src="logo.jpg"AN Logo">
-</div>
+    <div class="logo">
+        <img src="logo.jpg" alt="AN Logo">
+    </div>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Work</a>
-        <a href="https://wa.me/6281312194625" class="nav-btn">Hire Me</a>
+        <a href="#home" data-i18n="navHome">Beranda</a>
+        <a href="#projects" data-i18n="navWork">Karya</a>
+        <a href="https://wa.me/6281312194625" class="nav-btn" data-i18n="navHire">Rekrut Saya</a>
+        <button id="lang-toggle" class="lang-btn">EN</button>
     </nav>
 </header>
 
@@ -29,22 +29,42 @@
     <div class="container">
         <div class="hero-layout">
             <div class="hero-text" data-aos="fade-right">
-                <div class="hero-badge">Available for 2026 Projects</div>
-                <h1>Website<br><span>Developer</span></h1>
-                <p>Halo, saya <strong>Anugrah</strong>. Saya merancang dan membangun infrastruktur web yang elegan, cepat, dan berkelas dunia.</p>
+                <div class="hero-badge" data-i18n="heroBadge">Tersedia untuk Proyek 2026</div>
+                <h1 data-i18n="heroTitle">Website<br><span>Developer</span></h1>
+                <p data-i18n="heroDesc">Halo, saya <strong>Anugrah</strong>. Saya merancang dan membangun infrastruktur web yang elegan, cepat, dan berkelas dunia.</p>
                 <div class="cta-group">
-                    <a href="#projects" class="btn-primary">View Portfolio</a>
-                    <a href="https://wa.me/6281312194625" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat Me</a>
+                    <a href="#projects" class="btn-primary" data-i18n="viewPortfolio">Lihat Portfolio</a>
+                    <a href="https://wa.me/6281312194625" class="btn-wa" data-i18n="chatMe"><i class="fa-brands fa-whatsapp"></i> Chat Saya</a>
                 </div>
             </div>
             <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="200">
                 <div class="image-border">
                     <img src="foto.jpg" alt="Anugrah" class="profile-img">
                 </div>
-                <div class="floating-card">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Verified Developer</span>
+                <div class="floating-card" data-i18n="verifiedDev">
+                    <i class="fa-solid fa-check"></i> <span>Developer Terverifikasi</span>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-me">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="aboutTitle">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <p data-i18n="aboutP1">Halo! Saya Anugrah, seorang Website Developer yang passionate dalam menciptakan pengalaman digital yang luar biasa. Dengan pengalaman lebih dari 3 tahun di bidang development, saya telah membantu berbagai bisnis dari startup hingga perusahaan besar membangun website yang tidak hanya cantik, tapi juga efektif dalam menjangkau audiens.</p>
+                <p data-i18n="aboutP2">Mulai dari coding sederhana sejak 2020, saya telah mengembangkan keterampilan di berbagai teknologi web modern. Saya percaya bahwa setiap proyek adalah kesempatan untuk belajar dan berinovasi, dengan fokus utama pada kualitas, performa, dan kepuasan klien.</p>
+                <p data-i18n="aboutP3">Di luar coding, saya suka membaca tentang teknologi terbaru dan berkontribusi di komunitas developer. Mari kita bangun sesuatu yang hebat bersama!</p>
+                <div class="about-stats">
+                    <div data-i18n="stat1"><strong>3+</strong> Tahun Pengalaman</div>
+                    <div data-i18n="stat2"><strong>50+</strong> Proyek Selesai</div>
+                    <div data-i18n="stat3"><strong>100%</strong> Klien Puas</div>
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="foto.jpg" alt="Anugrah">
             </div>
         </div>
     </div>
@@ -52,209 +72,547 @@
 
 <section class="expertise">
     <div class="container">
-        <h2 class="section-title" data-aos="fade-up">My <span>Expertise</span></h2>
-
+        <h2 class="section-title" data-aos="fade-up" data-i18n="expertiseTitle">Keahlian <span>Saya</span></h2>
         <div class="expertise-grid">
-
             <div class="expert-card" data-aos="fade-up">
                 <i class="fa-solid fa-gem"></i>
                 <h3>Luxury Brand Positioning</h3>
-                <p>Saya membangun website yang bukan hanya tampil bagus, tapi meningkatkan persepsi premium dan eksklusivitas brand Anda.</p>
+                <p data-i18n="exp1Desc">Saya membangun website yang bukan hanya tampil bagus, tapi meningkatkan persepsi premium dan eksklusivitas brand Anda.</p>
             </div>
-
             <div class="expert-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fa-solid fa-bolt"></i>
                 <h3>High Performance</h3>
-                <p>Struktur website dioptimalkan untuk kecepatan, SEO, dan pengalaman pengguna yang mulus di semua perangkat.</p>
+                <p data-i18n="exp2Desc">Struktur website dioptimalkan untuk kecepatan, SEO, dan pengalaman pengguna yang mulus di semua perangkat.</p>
             </div>
-
             <div class="expert-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fa-solid fa-chart-line"></i>
                 <h3>Conversion Focused</h3>
-                <p>Setiap layout dirancang untuk mendorong tindakan: booking, konsultasi, atau pembelian.</p>
+                <p data-i18n="exp3Desc">Setiap layout dirancang untuk mendorong tindakan: booking, konsultasi, atau pembelian.</p>
             </div>
-
         </div>
     </div>
 </section>
 
 <section id="projects" class="projects">
-    <h2 class="section-title" data-aos="fade-up">
-        Selected <span>Works</span>
+    <h2 class="section-title" data-aos="fade-up" data-i18n="projectsTitle">
+        Karya <span>Terpilih</span>
     </h2>
 
     <div class="project-list">
-
-        <!-- PROJECT 01 -->
         <div class="project-item" data-aos="fade-up">
             <div class="laptop-mockup">
                 <div class="laptop-screen">
                     <img src="project1.jpg" alt="Sistem Coffee Preview">
                     <div class="p-overlay">
-                        <a href="https://nugrahn0123.github.io/Sistem-Coffee/" target="_blank">
-                            View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="https://nugrahn0123.github.io/Sistem-Coffee/" target="_blank" data-i18n="viewDetailsBtn">
+                            Lihat Detail <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="laptop-base"></div>
             </div>
-
             <div class="p-info">
                 <span>01. Web Development</span>
                 <h3>SISTEM Coffee</h3>
+                <div class="project-description">
+                    <p data-i18n="p1Desc">Sistem manajemen kafe lengkap dengan fitur pesanan online, menu interaktif, dan integrasi pembayaran. Dibangun menggunakan HTML, CSS, JavaScript, dan local storage untuk simulasi database. Dioptimalkan untuk performa tinggi dan responsif di semua device.</p>
+                    <p data-i18n="techLabel"><strong>Teknologi:</strong></p>
+                    <ul>
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li>
+                    </ul>
+                    <p data-i18n="p1Result"><strong>Hasil:</strong> Meningkatkan efisiensi operasional kafe dan pengalaman pelanggan.</p>
+                </div>
             </div>
         </div>
 
-        <!-- PROJECT 02 -->
         <div class="project-item" data-aos="fade-up" data-aos-delay="100">
             <div class="laptop-mockup">
                 <div class="laptop-screen">
                     <img src="project2.jpg" alt="Beauty Clinic Preview">
                     <div class="p-overlay">
-                        <a href="https://nugrahn0123.github.io/Klinik-Preview/" target="_blank">
-                            View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="https://nugrahn0123.github.io/Klinik-Preview/" target="_blank" data-i18n="viewDetailsBtn">
+                            Lihat Detail <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="laptop-base"></div>
             </div>
-
             <div class="p-info">
                 <span>02. Web Development</span>
                 <h3>Beauty Clinic Website</h3>
+                <div class="project-description">
+                    <p data-i18n="p2Desc">Website modern untuk klinik kecantikan dengan galeri layanan, booking online, dan informasi treatment. Menggunakan animasi smooth dan desain elegan untuk menarik pelanggan premium.</p>
+                    <p data-i18n="techLabel"><strong>Teknologi:</strong></p>
+                    <ul>
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>AOS Animation Library</li>
+                    </ul>
+                    <p data-i18n="p2Result"><strong>Hasil:</strong> Meningkatkan konversi booking online sebesar 40% dan brand awareness.</p>
+                </div>
             </div>
         </div>
 
-        <!-- PROJECT 03 -->
         <div class="project-item" data-aos="fade-up" data-aos-delay="200">
             <div class="laptop-mockup">
                 <div class="laptop-screen">
                     <img src="project3.jpg" alt="Restaurant Website Preview">
                     <div class="p-overlay">
-                        <a href="https://nugrahn0123.github.io/Preview-Resto/" target="_blank">
-                            View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="https://nugrahn0123.github.io/Preview-Resto/" target="_blank" data-i18n="viewDetailsBtn">
+                            Lihat Detail <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="laptop-base"></div>
             </div>
-
             <div class="p-info">
                 <span>03. Web Development</span>
                 <h3>Restaurant Website</h3>
+                <div class="project-description">
+                    <p data-i18n="p3Desc">Website restoran dengan menu digital, galeri makanan, dan sistem reservasi. Fokus pada pengalaman pengguna yang intuitif dan loading cepat untuk meningkatkan traffic.</p>
+                    <p data-i18n="techLabel"><strong>Teknologi:</strong></p>
+                    <ul>
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Grid</li>
+                    </ul>
+                    <p data-i18n="p3Result"><strong>Hasil:</strong> Meningkatkan reservasi online dan engagement pelanggan.</p>
+                </div>
             </div>
         </div>
 
-        <!-- PROJECT 04 -->
         <div class="project-item" data-aos="fade-up" data-aos-delay="300">
             <div class="laptop-mockup">
                 <div class="laptop-screen">
                     <img src="project4.jpg" alt="Consulting Website Preview">
                     <div class="p-overlay">
-                        <a href="https://nugrahn0123.github.io/Preview-Konsultan/" target="_blank">
-                            View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="https://nugrahn0123.github.io/Preview-Konsultan/" target="_blank" data-i18n="viewDetailsBtn">
+                            Lihat Detail <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="laptop-base"></div>
             </div>
-
             <div class="p-info">
                 <span>04. Web Development</span>
                 <h3>Consulting Website</h3>
+                <div class="project-description">
+                    <p data-i18n="p4Desc">Website konsultasi bisnis dengan landing page yang persuasif, form kontak, dan showcase expertise. Dirancang untuk konversi tinggi dengan CTA yang jelas.</p>
+                    <p data-i18n="techLabel"><strong>Teknologi:</strong></p>
+                    <ul>
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Form Validation</li>
+                    </ul>
+                    <p data-i18n="p4Result"><strong>Hasil:</strong> Meningkatkan lead generation dan inquiry dari calon klien.</p>
+                </div>
             </div>
         </div>
+    </div>
 
+    <div class="section-divider"></div>
+    <div class="project-stats">
+        <div>
+            <h3>10+</h3>
+            <p data-i18n="statBuilt">Projects Built</p>
+        </div>
+        <div>
+            <h3>100%</h3>
+            <p data-i18n="statResp">Responsive</p>
+        </div>
+        <div>
+            <h3 data-i18n="statFast">Fast</h3>
+            <p data-i18n="statOpt">Optimized Performance</p>
+        </div>
+    </div>
+    <div class="project-footer">
+        <p data-i18n="projectFooterText">
+            Each project is crafted with attention to detail, performance optimization,
+            and strategic design thinking to ensure long-term business impact.
+        </p>
+    </div>
+    <div class="section-divider"></div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="testiTitle">Testimoni <span>Klien</span></h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="testimonial-content">
+                    <p data-i18n="testi1">"Anugrah sangat profesional dan cepat dalam menyelesaikan website kafe kami. Hasilnya melebihi ekspektasi dan traffic website meningkat drastis!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="client1.jpg" alt="Client 1">
+                    <div>
+                        <h4>Ahmad Rahman</h4>
+                        <span>Owner, Sistem Coffee</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-content">
+                    <p data-i18n="testi2">"Website klinik kami sekarang terlihat premium dan mudah digunakan. Anugrah memahami kebutuhan bisnis kami dengan baik."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="client2.jpg" alt="Client 2">
+                    <div>
+                        <h4>Sari Dewi</h4>
+                        <span>Manager, Beauty Clinic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-content">
+                    <p data-i18n="testi3">"Kerja sama yang menyenangkan! Website restoran kami sekarang responsif dan menarik banyak pelanggan baru."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="client3.jpg" alt="Client 3">
+                    <div>
+                        <h4>Budi Santoso</h4>
+                        <span>CEO, Restaurant Chain</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<div class="section-divider"></div>
-<div class="project-stats">
-    <div>
-        <h3>10+</h3>
-        <p>Projects Built</p>
+<section class="skills">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="skillsTitle">Keterampilan <span>Saya</span></h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-aos="fade-up">
+                <i class="fa-brands fa-html5"></i><h3>HTML5</h3><p>Expert</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3><p>Expert</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Advanced</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-brands fa-react"></i><h3>React</h3><p>Intermediate</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="fa-brands fa-node-js"></i><h3>Node.js</h3><p>Intermediate</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="fa-brands fa-git-alt"></i><h3>Git</h3><p>Expert</p>
+            </div>
+        </div>
     </div>
-    <div>
-        <h3>100%</h3>
-        <p>Responsive</p>
+</section>
+
+<section class="experience">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="expTitle">Pengalaman <span>Kerja</span></h2>
+        <div class="experience-timeline">
+            <div class="experience-item" data-aos="fade-right">
+                <div class="experience-date" data-i18n="expDate1">2023 - Present</div>
+                <div class="experience-content">
+                    <h3>Freelance Web Developer</h3>
+                    <p>Independent Contractor</p>
+                    <ul>
+                        <li data-i18n="exp1Li1">Membangun 50+ website untuk berbagai industri</li>
+                        <li data-i18n="exp1Li2">Kolaborasi dengan klien untuk memahami kebutuhan bisnis</li>
+                        <li data-i18n="exp1Li3">Optimasi performa dan SEO untuk hasil maksimal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item" data-aos="fade-left">
+                <div class="experience-date">2021 - 2023</div>
+                <div class="experience-content">
+                    <h3>Junior Web Developer</h3>
+                    <p>Tech Startup Indonesia</p>
+                    <ul>
+                        <li data-i18n="exp2Li1">Pengembangan frontend untuk aplikasi web</li>
+                        <li data-i18n="exp2Li2">Kerja tim dalam proyek e-commerce</li>
+                        <li data-i18n="exp2Li3">Belajar teknologi baru dan best practices</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item" data-aos="fade-right">
+                <div class="experience-date">2020 - 2021</div>
+                <div class="experience-content">
+                    <h3>Web Development Intern</h3>
+                    <p>Digital Agency</p>
+                    <ul>
+                        <li data-i18n="exp3Li1">Assist dalam pembuatan landing page</li>
+                        <li data-i18n="exp3Li2">Belajar HTML, CSS, dan JavaScript dasar</li>
+                        <li data-i18n="exp3Li3">Kontribusi pada proyek open-source</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <h3>Fast</h3>
-        <p>Optimized Performance</p>
+</section>
+
+<section class="blog">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="blogTitle">Artikel <span>Terbaru</span></h2>
+        <div class="blog-grid">
+            <div class="blog-card" data-aos="fade-up">
+                <img src="blog1.jpg" alt="Blog 1">
+                <div class="blog-content">
+                    <h3 data-i18n="blog1Title">Cara Optimalkan Website untuk SEO</h3>
+                    <p data-i18n="blog1Desc">Tips praktis untuk meningkatkan ranking website Anda di mesin pencari.</p>
+                    <a href="#" class="read-more" data-i18n="readMore">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="blog2.jpg" alt="Blog 2">
+                <div class="blog-content">
+                    <h3 data-i18n="blog2Title">Tutorial JavaScript untuk Pemula</h3>
+                    <p data-i18n="blog2Desc">Panduan lengkap memulai programming dengan JavaScript.</p>
+                    <a href="#" class="read-more" data-i18n="readMore">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="blog3.jpg" alt="Blog 3">
+                <div class="blog-content">
+                    <h3 data-i18n="blog3Title">Desain Responsif: Pentingnya Mobile-First</h3>
+                    <p data-i18n="blog3Desc">Mengapa website harus responsif dan bagaimana melakukannya.</p>
+                    <a href="#" class="read-more" data-i18n="readMore">Read More</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="project-footer">
-    <p>
-        Each project is crafted with attention to detail, performance optimization,
-        and strategic design thinking to ensure long-term business impact.
-    </p>
-</div>
-    <div class="section-divider"></div>
 </section>
 
 <section class="contact-section" data-aos="zoom-in">
     <div class="contact-content">
-        <h2>Ready to build something <span>Extraordinary?</span></h2>
-        <p>Mari diskusi tentang proyek Anda dan buat perubahan nyata.</p>
+        <h2 data-i18n="contactH2">Siap membangun sesuatu yang <span>Luarbiasa?</span></h2>
+        <p data-i18n="contactP">Mari diskusi tentang proyek Anda dan buat perubahan nyata. Dapatkan konsultasi gratis 30 menit untuk ide proyek Anda!</p>
         <div class="contact-btns">
-            <a href="mailto:anugrahn935@gmail.com" class="c-btn"><i class="fa-solid fa-envelope"></i> Email</a>
-            <a href="https://wa.me/6281312194625" class="c-btn wa-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a href="mailto:anugrahn935@gmail.com" class="c-btn" data-i18n="btnEmail"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://wa.me/6281312194625" class="c-btn wa-btn" data-i18n="btnWa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a href="#" class="c-btn schedule-btn" data-i18n="btnSchedule"><i class="fa-solid fa-calendar"></i> Jadwalkan Konsultasi</a>
+        </div>
+        <div class="social-proof">
+            <p data-i18n="socialProof">Dipercaya oleh 50+ klien dari berbagai industri</p>
         </div>
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    // Inisialisasi Animasi Scroll
-    AOS.init({ duration: 1000, once: true });
-
-    // Inisialisasi Efek Partikel
-    particlesJS('particles-js', {
-        particles: {
-            number: { value: 80, density: { enable: true, value_area: 800 } },
-            color: { value: "#FFD700" },
-            shape: { type: "circle" },
-            opacity: { value: 0.2, random: true },
-            size: { value: 3, random: true },
-            line_linked: { enable: true, distance: 150, color: "#FFD700", opacity: 0.1, width: 1 },
-            move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
-        },
-        interactivity: {
-            detect_on: "canvas",
-            events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true }
-        },
-        retina_detect: true
-    });
-</script>
 <footer class="footer">
     <div class="footer-container">
-
         <div class="footer-brand">
-            <img src="logo.jpg"AN Logo">
-            <p>
-                Building elegant, high-performance websites for modern brands.
-            </p>
+            <img src="logo.jpg" alt="AN Logo">
+            <p data-i18n="footerBrandText">Membangun website yang elegan dan berperforma tinggi untuk brand modern.</p>
         </div>
-
         <div class="footer-links">
-            <h4>Navigation</h4>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="https://wa.me/6281312194625">Hire Me</a>
+            <h4 data-i18n="footerNavTitle">Navigasi</h4>
+            <a href="#home" data-i18n="navHome">Beranda</a>
+            <a href="#projects" data-i18n="navWork">Karya</a>
+            <a href="https://wa.me/6281312194625" data-i18n="navHire">Rekrut Saya</a>
         </div>
-
         <div class="footer-contact">
-            <h4>Contact</h4>
+            <h4 data-i18n="footerContactTitle">Kontak</h4>
             <p>Email: anugrahn935@gmail.com</p>
             <p>WhatsApp: +62 813-1219-4625</p>
         </div>
-
     </div>
-
-    <div class="footer-bottom">
+    <div class="footer-bottom" data-i18n="footerRights">
         © 2026 Anugrah — All Rights Reserved.
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Objek Translasi Lengkap
+    const translations = {
+        id: {
+            navHome: 'Beranda',
+            navWork: 'Karya',
+            navHire: 'Rekrut Saya',
+            heroBadge: 'Tersedia untuk Proyek 2026',
+            heroTitle: 'Website<br><span>Developer</span>',
+            heroDesc: 'Halo, saya <strong>Anugrah</strong>. Saya merancang dan membangun infrastruktur web yang elegan, cepat, dan berkelas dunia.',
+            viewPortfolio: 'Lihat Portfolio',
+            chatMe: '<i class="fa-brands fa-whatsapp"></i> Chat Saya',
+            verifiedDev: '<i class="fa-solid fa-check"></i> <span>Developer Terverifikasi</span>',
+            aboutTitle: 'About <span>Me</span>',
+            aboutP1: 'Halo! Saya Anugrah, seorang Website Developer yang passionate dalam menciptakan pengalaman digital yang luar biasa. Dengan pengalaman lebih dari 3 tahun di bidang development, saya telah membantu berbagai bisnis dari startup hingga perusahaan besar membangun website yang tidak hanya cantik, tapi juga efektif dalam menjangkau audiens.',
+            aboutP2: 'Mulai dari coding sederhana sejak 2020, saya telah mengembangkan keterampilan di berbagai teknologi web modern. Saya percaya bahwa setiap proyek adalah kesempatan untuk belajar dan berinovasi, dengan fokus utama pada kualitas, performa, dan kepuasan klien.',
+            aboutP3: 'Di luar coding, saya suka membaca tentang teknologi terbaru dan berkontribusi di komunitas developer. Mari kita bangun sesuatu yang hebat bersama!',
+            stat1: '<strong>3+</strong> Tahun Pengalaman',
+            stat2: '<strong>50+</strong> Proyek Selesai',
+            stat3: '<strong>100%</strong> Klien Puas',
+            expertiseTitle: 'Keahlian <span>Saya</span>',
+            exp1Desc: 'Saya membangun website yang bukan hanya tampil bagus, tapi meningkatkan persepsi premium dan eksklusivitas brand Anda.',
+            exp2Desc: 'Struktur website dioptimalkan untuk kecepatan, SEO, dan pengalaman pengguna yang mulus di semua perangkat.',
+            exp3Desc: 'Setiap layout dirancang untuk mendorong tindakan: booking, konsultasi, atau pembelian.',
+            projectsTitle: 'Karya <span>Terpilih</span>',
+            viewDetailsBtn: 'Lihat Detail <i class="fa-solid fa-arrow-up-right-from-square"></i>',
+            p1Desc: 'Sistem manajemen kafe lengkap dengan fitur pesanan online, menu interaktif, dan integrasi pembayaran. Dibangun menggunakan HTML, CSS, JavaScript, dan local storage untuk simulasi database. Dioptimalkan untuk performa tinggi dan responsif di semua device.',
+            techLabel: '<strong>Teknologi:</strong>',
+            p1Result: '<strong>Hasil:</strong> Meningkatkan efisiensi operasional kafe dan pengalaman pelanggan.',
+            p2Desc: 'Website modern untuk klinik kecantikan dengan galeri layanan, booking online, dan informasi treatment. Menggunakan animasi smooth dan desain elegan untuk menarik pelanggan premium.',
+            p2Result: '<strong>Hasil:</strong> Meningkatkan konversi booking online sebesar 40% dan brand awareness.',
+            p3Desc: 'Website restoran dengan menu digital, galeri makanan, dan sistem reservasi. Fokus pada pengalaman pengguna yang intuitif dan loading cepat untuk meningkatkan traffic.',
+            p3Result: '<strong>Hasil:</strong> Meningkatkan reservasi online dan engagement pelanggan.',
+            p4Desc: 'Website konsultasi bisnis dengan landing page yang persuasif, form kontak, dan showcase expertise. Dirancang untuk konversi tinggi dengan CTA yang jelas.',
+            p4Result: '<strong>Hasil:</strong> Meningkatkan lead generation dan inquiry dari calon klien.',
+            statBuilt: 'Projects Built',
+            statResp: 'Responsive',
+            statFast: 'Fast',
+            statOpt: 'Optimized Performance',
+            projectFooterText: 'Each project is crafted with attention to detail, performance optimization, and strategic design thinking to ensure long-term business impact.',
+            testiTitle: 'Testimoni <span>Klien</span>',
+            testi1: '"Anugrah sangat profesional dan cepat dalam menyelesaikan website kafe kami. Hasilnya melebihi ekspektasi dan traffic website meningkat drastis!"',
+            testi2: '"Website klinik kami sekarang terlihat premium dan mudah digunakan. Anugrah memahami kebutuhan bisnis kami dengan baik."',
+            testi3: '"Kerja sama yang menyenangkan! Website restoran kami sekarang responsif dan menarik banyak pelanggan baru."',
+            skillsTitle: 'Keterampilan <span>Saya</span>',
+            expTitle: 'Pengalaman <span>Kerja</span>',
+            expDate1: '2023 - Present',
+            exp1Li1: 'Membangun 50+ website untuk berbagai industri',
+            exp1Li2: 'Kolaborasi dengan klien untuk memahami kebutuhan bisnis',
+            exp1Li3: 'Optimasi performa dan SEO untuk hasil maksimal',
+            exp2Li1: 'Pengembangan frontend untuk aplikasi web',
+            exp2Li2: 'Kerja tim dalam proyek e-commerce',
+            exp2Li3: 'Belajar teknologi baru dan best practices',
+            exp3Li1: 'Assist dalam pembuatan landing page',
+            exp3Li2: 'Belajar HTML, CSS, dan JavaScript dasar',
+            exp3Li3: 'Kontribusi pada proyek open-source',
+            blogTitle: 'Artikel <span>Terbaru</span>',
+            blog1Title: 'Cara Optimalkan Website untuk SEO',
+            blog1Desc: 'Tips praktis untuk meningkatkan ranking website Anda di mesin pencari.',
+            blog2Title: 'Tutorial JavaScript untuk Pemula',
+            blog2Desc: 'Panduan lengkap memulai programming dengan JavaScript.',
+            blog3Title: 'Desain Responsif: Pentingnya Mobile-First',
+            blog3Desc: 'Mengapa website harus responsif dan bagaimana melakukannya.',
+            readMore: 'Read More',
+            contactH2: 'Siap membangun sesuatu yang <span>Luarbiasa?</span>',
+            contactP: 'Mari diskusi tentang proyek Anda dan buat perubahan nyata. Dapatkan konsultasi gratis 30 menit untuk ide proyek Anda!',
+            btnEmail: '<i class="fa-solid fa-envelope"></i> Email',
+            btnWa: '<i class="fa-brands fa-whatsapp"></i> WhatsApp',
+            btnSchedule: '<i class="fa-solid fa-calendar"></i> Jadwalkan Konsultasi',
+            socialProof: 'Dipercaya oleh 50+ klien dari berbagai industri',
+            footerBrandText: 'Membangun website yang elegan dan berperforma tinggi untuk brand modern.',
+            footerNavTitle: 'Navigasi',
+            footerContactTitle: 'Kontak',
+            footerRights: '© 2026 Anugrah — All Rights Reserved.'
+        },
+        en: {
+            navHome: 'Home',
+            navWork: 'Work',
+            navHire: 'Hire Me',
+            heroBadge: 'Available for 2026 Projects',
+            heroTitle: 'Website<br><span>Developer</span>',
+            heroDesc: 'Hello, I am <strong>Anugrah</strong>. I design and build elegant, fast, and world-class web infrastructure.',
+            viewPortfolio: 'View Portfolio',
+            chatMe: '<i class="fa-brands fa-whatsapp"></i> Chat Me',
+            verifiedDev: '<i class="fa-solid fa-check"></i> <span>Verified Developer</span>',
+            aboutTitle: 'About <span>Me</span>',
+            aboutP1: 'Hello! I am Anugrah, a Website Developer passionate about creating exceptional digital experiences. With over 3 years of development experience, I have helped various businesses from startups to large enterprises build websites that are not only beautiful but also effective in reaching audiences.',
+            aboutP2: 'Starting from simple coding since 2020, I have developed skills in various modern web technologies. I believe every project is an opportunity to learn and innovate, with a primary focus on quality, performance, and client satisfaction.',
+            aboutP3: 'Outside of coding, I enjoy reading about the latest tech and contributing to developer communities. Let\'s build something great together!',
+            stat1: '<strong>3+</strong> Years Experience',
+            stat2: '<strong>50+</strong> Projects Completed',
+            stat3: '<strong>100%</strong> Satisfied Clients',
+            expertiseTitle: 'My <span>Expertise</span>',
+            exp1Desc: 'I build websites that not only look good but elevate the premium perception and exclusivity of your brand.',
+            exp2Desc: 'Website structure optimized for speed, SEO, and a seamless user experience across all devices.',
+            exp3Desc: 'Every layout is designed to drive action: bookings, consultations, or purchases.',
+            projectsTitle: 'Selected <span>Works</span>',
+            viewDetailsBtn: 'View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>',
+            p1Desc: 'A complete cafe management system with online ordering, interactive menus, and payment integration. Built using HTML, CSS, JavaScript, and local storage for database simulation. Optimized for high performance and fully responsive across all devices.',
+            techLabel: '<strong>Technologies:</strong>',
+            p1Result: '<strong>Result:</strong> Improved cafe operational efficiency and customer experience.',
+            p2Desc: 'A modern website for a beauty clinic featuring a service gallery, online booking, and treatment information. Uses smooth animations and elegant design to attract premium clients.',
+            p2Result: '<strong>Result:</strong> Increased online booking conversions by 40% and boosted brand awareness.',
+            p3Desc: 'A restaurant website with a digital menu, food gallery, and reservation system. Focused on intuitive user experience and fast loading times to increase traffic.',
+            p3Result: '<strong>Result:</strong> Increased online reservations and customer engagement.',
+            p4Desc: 'A business consulting website with a persuasive landing page, contact forms, and expertise showcase. Designed for high conversion with clear CTAs.',
+            p4Result: '<strong>Result:</strong> Increased lead generation and inquiries from prospective clients.',
+            statBuilt: 'Projects Built',
+            statResp: 'Responsive',
+            statFast: 'Fast',
+            statOpt: 'Optimized Performance',
+            projectFooterText: 'Each project is crafted with attention to detail, performance optimization, and strategic design thinking to ensure long-term business impact.',
+            testiTitle: 'Client <span>Testimonials</span>',
+            testi1: '"Anugrah is highly professional and fast in completing our cafe website. The results exceeded expectations and website traffic increased drastically!"',
+            testi2: '"Our clinic website now looks premium and is easy to use. Anugrah understands our business needs perfectly."',
+            testi3: '"A pleasure to work with! Our restaurant website is now responsive and attracts many new customers."',
+            skillsTitle: 'My <span>Skills</span>',
+            expTitle: 'Work <span>Experience</span>',
+            expDate1: '2023 - Present',
+            exp1Li1: 'Built 50+ websites for various industries',
+            exp1Li2: 'Collaborated with clients to understand business needs',
+            exp1Li3: 'Optimized performance and SEO for maximum results',
+            exp2Li1: 'Frontend development for web applications',
+            exp2Li2: 'Teamwork on e-commerce projects',
+            exp2Li3: 'Learned new technologies and best practices',
+            exp3Li1: 'Assisted in creating landing pages',
+            exp3Li2: 'Learned basic HTML, CSS, and JavaScript',
+            exp3Li3: 'Contributed to open-source projects',
+            blogTitle: 'Latest <span>Articles</span>',
+            blog1Title: 'How to Optimize Your Website for SEO',
+            blog1Desc: 'Practical tips to improve your website ranking on search engines.',
+            blog2Title: 'JavaScript Tutorial for Beginners',
+            blog2Desc: 'A complete guide to getting started with programming using JavaScript.',
+            blog3Title: 'Responsive Design: The Importance of Mobile-First',
+            blog3Desc: 'Why your website needs to be responsive and how to do it.',
+            readMore: 'Read More',
+            contactH2: 'Ready to build something <span>Extraordinary?</span>',
+            contactP: 'Let\'s discuss your project and create real change. Get a free 30-minute consultation for your project idea!',
+            btnEmail: '<i class="fa-solid fa-envelope"></i> Email',
+            btnWa: '<i class="fa-brands fa-whatsapp"></i> WhatsApp',
+            btnSchedule: '<i class="fa-solid fa-calendar"></i> Schedule Consultation',
+            socialProof: 'Trusted by 50+ clients from various industries',
+            footerBrandText: 'Building elegant and high-performance websites for modern brands.',
+            footerNavTitle: 'Navigation',
+            footerContactTitle: 'Contact',
+            footerRights: '© 2026 Anugrah — All Rights Reserved.'
+        }
+    };
+
+    window.addEventListener('load', () => {
+        // Inisialisasi Animasi Scroll
+        AOS.init({ duration: 1000, once: true });
+
+        // Inisialisasi Efek Partikel
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#FFD700" },
+                shape: { type: "circle" },
+                opacity: { value: 0.2, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#FFD700", opacity: 0.1, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true }
+            },
+            retina_detect: true
+        });
+
+        // Language Toggle Functionality
+        const langToggle = document.getElementById('lang-toggle');
+        let currentLang = localStorage.getItem('language') || 'id'; // Ambil bahasa terakhir atau default ID
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            langToggle.textContent = lang === 'id' ? 'EN' : 'ID';
+
+            // Loop ke semua elemen yang memiliki atribut data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        // Initialize language
+        updateLanguage(currentLang);
+
+        // Toggle language button click
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLang === 'id' ? 'en' : 'id';
+            updateLanguage(newLang);
+        });
+    });
+</script>
+
 </body>
 </html>

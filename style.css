@@ -442,14 +442,17 @@ nav a:hover {
     header {
         padding: 15px 5%;
         align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
     }
 
     nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: flex-start;
         gap: 8px;
-        max-width: 75%;
+        max-width: 100%;
+        width: 100%;
     }
 
     nav a {
@@ -670,6 +673,18 @@ nav a:hover {
 .lang-btn:hover {
     background: gold;
     color: black;
+}
+
+@media (max-width: 768px) {
+    nav a,
+    .nav-btn,
+    .lang-btn {
+        flex: 0 0 auto;
+    }
+
+    .lang-btn {
+        margin-left: 0;
+    }
 }
 /* ===============================
    LAPTOP MOCKUP CLEAN VERSION

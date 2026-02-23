@@ -332,6 +332,18 @@ nav a:hover {
     gap: 40px;
 }
 
+.project-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projects-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 .p-img {
     position: relative;
     border-radius: 20px;
@@ -364,6 +376,9 @@ nav a:hover {
 
 .p-info {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .p-info span {
@@ -545,56 +560,46 @@ nav a:hover {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
+    .projects-actions {
+        margin-top: 30px;
+    }
+
     .p-info h3 {
         font-size: 20px;
     }
 
-@media (max-width: 768px){
-
     /* PERBAIKI SECTION STATS */
-    .project-stats{
+    .project-stats {
         flex-direction: column;
         gap: 15px;
         margin-top: 30px;
         margin-bottom: 20px;
     }
 
-    .project-stats div{
+    .project-stats div {
         padding: 15px 0;
     }
 
-    .project-stats h3{
+    .project-stats h3 {
         font-size: 24px;
         margin-bottom: 5px;
     }
 
-    .project-stats p{
+    .project-stats p {
         font-size: 13px;
     }
 
-    .project-footer{
+    .project-footer {
         margin-top: 25px;
         padding: 0 10px;
     }
 
-    .project-footer p{
+    .project-footer p {
         font-size: 14px;
         line-height: 1.6;
     }
 
-}
-.project-stats div{
-    background: #0f0f0f;
-    border: 1px solid rgba(255,215,0,0.1);
-    border-radius: 15px;
-    padding: 20px;
-    transition: 0.3s;
-}
-
-.project-stats div:hover{
-    border-color: #FFD700;
-}
-    /* CONTACT */
     .contact-section {
         padding: 80px 5%;
     }
@@ -617,7 +622,18 @@ nav a:hover {
         width: 100%;
         text-align: center;
     }
+}
 
+.project-stats div {
+    background: #0f0f0f;
+    border: 1px solid rgba(255,215,0,0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.project-stats div:hover {
+    border-color: #FFD700;
 }
 .project-footer {
     text-align: center;
@@ -651,10 +667,19 @@ nav a:hover {
     color: var(--text-dim);
     margin-top: 5px;
 }
-@media (max-width:768px){
-    .project-stats{
+
+@media (max-width:768px) {
+    .project-stats {
         flex-direction: column;
         gap: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .all-projects-page .project-list .project-item:last-child {
+        grid-column: 1 / -1;
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
 .lang-btn {
@@ -710,6 +735,9 @@ nav a:hover {
 
 .laptop-screen img {
     width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
     border-radius: 10px;
     transition: 0.4s ease;
 }
@@ -913,6 +941,7 @@ nav a:hover {
     border-radius: 10px;
     margin-top: 15px;
     border-left: 3px solid var(--gold);
+    flex: 1;
 }
 
 .project-description p {

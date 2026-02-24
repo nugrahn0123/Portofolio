@@ -455,19 +455,27 @@ nav a:hover {
 
     /* HEADER */
     header {
-        padding: 15px 5%;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
+        padding: 12px 5%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
     }
 
     nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
         gap: 8px;
-        max-width: 100%;
-        width: 100%;
+        max-width: none;
+        width: auto;
     }
 
     nav a {
@@ -907,6 +915,13 @@ nav a:hover {
     margin-top: 30px;
 }
 
+.about-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
 .about-stats div {
     text-align: center;
 }
@@ -922,6 +937,55 @@ nav a:hover {
     max-width: 400px;
     border-radius: 20px;
     border: 2px solid rgba(255,215,0,0.3);
+}
+
+/* ABOUT PAGE */
+.about-page-main {
+    min-height: 100vh;
+    padding: 120px 6% 80px;
+    background: linear-gradient(135deg, var(--dark) 0%, #0a0a0a 100%);
+}
+
+.about-page-card {
+    background: var(--card);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 24px;
+    padding: 35px;
+}
+
+.about-detail-grid {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-detail-card {
+    background: var(--card);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.about-detail-card h3 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.about-detail-card i {
+    color: var(--gold);
+    margin-right: 8px;
+}
+
+.about-detail-card ul {
+    padding-left: 20px;
+}
+
+.about-detail-card li {
+    color: var(--text-dim);
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 /* PROJECT DESCRIPTIONS */
@@ -1224,6 +1288,27 @@ nav a:hover {
     .about-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .about-actions {
+        flex-direction: column;
+    }
+
+    .about-page-main {
+        padding: 100px 5% 60px;
+    }
+
+    .about-page-card {
+        padding: 22px;
+    }
+
+    .about-detail-grid {
+        grid-template-columns: 1fr;
     }
     
     .experience-timeline::before {

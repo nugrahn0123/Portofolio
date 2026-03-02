@@ -684,7 +684,7 @@ nav a:hover {
 }
 
 @media (min-width: 769px) {
-    .all-projects-page .project-list .project-item:last-child {
+    .all-projects-page .project-list .project-item:last-child:nth-child(odd) {
         grid-column: 1 / -1;
         max-width: 700px;
         margin: 0 auto;
